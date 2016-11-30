@@ -20,3 +20,17 @@
 运用插件时，当用到display:block时，会出现获取不到的bug，就用visibility:visible的方法解决即可，
 二者都不占文档流，运用插件时运用visibility属性是一个不错的选择
 ```
+
+###### 多行隐藏，兼容ie（原生js）
+```
+推荐网址https://github.com/josephschmitt/Clamp.js
+
+用法：
+
+var header = document.getElementsByTagName('body')[0].getElementsByTagName('h1')[0],
+            paragraph = document.getElementsByTagName('body')[0].getElementsByTagName('div')[0];
+            paragraphp=paragraph.getElementsByTagName('p')[0];
+            
+$clamp(header, {clamp: 1, useNativeClamp: false});
+$clamp(paragraphp, {clamp: 10, useNativeClamp: false, animate: true});
+```
