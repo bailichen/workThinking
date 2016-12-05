@@ -18,7 +18,7 @@
 ###### display:none和visibility:hidden
 ```
 运用插件时，当用到display:block时，会出现获取不到的bug，就用visibility:visible的方法解决即可，
-二者都不占文档流，运用插件时运用visibility属性是一个不错的选择
+二者都不占文档流，运用插件时运用visibility属性是一个不错的选择,visibility在弹出层的时候比较适合使用
 ```
 
 ###### 多行隐藏，兼容ie（原生js）
