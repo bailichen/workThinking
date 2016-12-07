@@ -34,3 +34,4 @@ var header = document.getElementsByTagName('body')[0].getElementsByTagName('h1')
 $clamp(header, {clamp: 1, useNativeClamp: false});
 $clamp(paragraphp, {clamp: 10, useNativeClamp: false, animate: true});
 ```
+######开发html5页面时用rem去控制自适应，但当与后台结合时，后端录入内容，就用px，并引入mc-mobile.js，mc-mobile.css即可
