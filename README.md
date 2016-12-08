@@ -35,3 +35,7 @@ $clamp(header, {clamp: 1, useNativeClamp: false});
 $clamp(paragraphp, {clamp: 10, useNativeClamp: false, animate: true});
 ```
 ######开发html5页面时用rem去控制自适应，但当与后台结合时，后端录入内容，就用px，并引入mc-mobile.js，mc-mobile.css即可，源代码在百度云盘
+
+######word-wrap:break-word和word-break;break-all的区别
+word-wrap:break-word 例子与上面一样，但区别就是它会把congratulation整个单词看成一个整体，如果该行末端宽度不够显示整个单词，它会自动把整个单词放到下一行，而不会把单词截断掉的。
+word-break;break-all 支持版本：IE5以上 该行为与亚洲语言的 normal 相同。也允许非亚洲语言文本行的任意字内断开。该值适合包含一些非亚洲文本的亚洲文本。 WORD-WRAP:break-word 支持版本：IE5.5以上 内容将在边界内换行。
