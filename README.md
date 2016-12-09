@@ -44,7 +44,7 @@ word-break;break-all 支持版本：IE5以上 该行为与亚洲语言的 normal
 #####ES6语法思考
 ```
 1、let和const命令
-let和var用法相似，但let所声明的变量只在let命令所在的代码块内有效，例如：
+① let和var用法相似，但let所声明的变量只在let命令所在的代码块内有效，例如：
 for (let i = 0; i < 10; i++) {}
 console.log(i);
 //ReferenceError: i is not defined;
@@ -63,4 +63,8 @@ for (let i = 0; i < 10; i++) {
   };
 }
 a[6](); // 6
+
+②let和const不存在变量提升
+③暂时性死区（块级区域存在let、const命令，他所声明的变量就绑定了这个区域，不再受外部的影响）
+④let不允许在相同的作用域内，重复声明同一个变量
 ```
